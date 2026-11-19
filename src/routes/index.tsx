@@ -1,23 +1,27 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { PlotPairApp } from "@/components/PlotPairApp";
 
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Plot Pair — Find stories worth your time" },
+      {
+        name: "description",
+        content:
+          "Discover movies and books with clear, content-based recommendations inspired by the stories you already love.",
+      },
+      { property: "og:title", content: "Plot Pair — Find stories worth your time" },
+      {
+        property: "og:description",
+        content: "Find books and films with themes, genres, and stories in common.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
+  return <PlotPairApp />;
 }

@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Application architecture
+
+- Keep the Plot Pair experience in `src/components/PlotPairApp.tsx`, with its bundled catalog and content-matching logic in focused `src/data`, `src/services`, `src/types`, and `src/utils` modules; this preserves the standalone demo while keeping the TanStack route as the page entry.

@@ -1,0 +1,20 @@
+{
+  "source": "code-archive",
+  "archive": "movie-and-book-recommendation-frontend.zip",
+  "capabilities": [
+    { "capability": "application code", "source": "React/Vite frontend", "outcome": "Recreated in the existing TanStack app; desktop, mobile, search, and item details verified", "status": "verified", "next_action": "None" },
+    { "capability": "schema", "source": "No database or schema detected", "outcome": "Not applicable; app uses bundled catalog data", "status": "not_present", "next_action": "None" },
+    { "capability": "records", "source": "Bundled movie and book catalog; no external record export", "outcome": "All 15 movies and 15 books preserved and browseable; recommendation flow checked", "status": "verified", "next_action": "None" },
+    { "capability": "auth identities", "source": "No authentication detected", "outcome": "Not applicable", "status": "not_present", "next_action": "None" },
+    { "capability": "authorization", "source": "No roles or access controls detected", "outcome": "Not applicable", "status": "not_present", "next_action": "None" },
+    { "capability": "uploaded file bytes", "source": "Two bundled JPG artwork assets", "outcome": "Both images preserved through app asset pointers; hero image verified and deterministic catalog artwork displays", "status": "verified", "next_action": "None" },
+    { "capability": "external providers", "source": "No external provider integrations or environment variables detected", "outcome": "None to preserve", "status": "not_present", "next_action": "None" },
+    { "capability": "public endpoints", "source": "No public API endpoints detected", "outcome": "None to preserve", "status": "not_present", "next_action": "None" },
+    { "capability": "callbacks", "source": "No callbacks detected", "outcome": "None to preserve", "status": "not_present", "next_action": "None" },
+    { "capability": "webhooks", "source": "No webhooks detected", "outcome": "None to preserve", "status": "not_present", "next_action": "None" },
+    { "capability": "schedules", "source": "No scheduled jobs detected", "outcome": "None to preserve", "status": "not_present", "next_action": "None" },
+    { "capability": "secrets", "source": "No secret variables detected", "outcome": "None to migrate", "status": "not_present", "next_action": "None" },
+    { "capability": "cutover", "source": "Static frontend; no prior deployment configuration detected", "outcome": "No external service cutover identified", "status": "not_present", "next_action": "None" },
+    { "capability": "verification", "source": "Preview app", "outcome": "Type check, routing/recommendation tests, desktop and mobile preview, search, recommendations, modal, image rendering, no overflow, and no runtime errors verified", "status": "verified", "next_action": "None" }
+  ]
+}
